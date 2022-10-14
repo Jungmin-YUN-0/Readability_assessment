@@ -17,7 +17,7 @@
 - code: bert_onesopeng_lower.sh (/home/jungmin/readability/text_augmentation/TransformersDataAugmentation/src/scripts/bert_onestopeng_lower.sh)
 - exp_14: traindataset을 class별로 10개만 샘플링해서 사용
 - exp_15: traindataset을 전체 사용
-
+- augmentation하는 코드들-> bet_aug 폴더에 
 [4]======================================================================================
 [Classification (using BERT)]
 
