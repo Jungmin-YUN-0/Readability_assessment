@@ -1,0 +1,29 @@
+[1]=====================================================================================
+[Data Preprocessing]
+- original data (전체 OneStopEnglish Datset)
+  /home/jungmin/readability/text_augmentation/TransformersDataAugmentation/datasets/onestopeng/onestopeng.csv
+- code: make_dataset.ipynb (/home/jungmin/readability/text_augmentation/TransformersDataAugmentation/manual.txt)
+  (생략!!)task1) label 바꾸기 (Elementary:0, Intermediate:1, Advanced=2) 
+  task2) train, valid, test로 나누기(80%, 10%, 10%)
+  task3) .tsv(from .csv) 파일 형식으로 바꿔서 저장하기
+
+[2]======================================================================================
+[Low-data Regime Experiment Setup]
+- 데이터 수가 적은 경우를 가정해주기 위해, datset을 작은 크기로 쪼개는 코드
+- 현재 상황에서는 할 필요가 없어서 생략함
+
+[3]======================================================================================
+[Data Augmenation]
+- code: bert_onesopeng_lower.sh (/home/jungmin/readability/text_augmentation/TransformersDataAugmentation/src/scripts/bert_onestopeng_lower.sh)
+- exp_14: traindataset을 class별로 10개만 샘플링해서 사용
+- exp_15: traindataset을 전체 사용
+
+[4]======================================================================================
+[Classification (using BERT)]
+
+
+_________________________________________________________________________________________
+[1] BERT, BART, GPT, EDA 기반 모델만 필요
+[2] Masked LM 대상으로, tf-idf 적용
+[3] 즉, CBERT, CMODBERT, CMODBERTP만 
+[4] tf-idf 적용했을 때, 안했을 때(제가 했어요 안해도 ㄱㅊ) -> 두 결과 모두 필요
