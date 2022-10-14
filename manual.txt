@@ -12,7 +12,7 @@
 - 데이터 수가 적은 경우를 가정해주기 위해, datset을 작은 크기로 쪼개는 코드
 - 현재 상황에서는 할 필요가 없어서 생략함
 
-[3]======================================================================================
+[3]====================================================================================== 
 [Data Augmenation]
 - code: bert_onesopeng_lower.sh (/home/jungmin/readability/text_augmentation/TransformersDataAugmentation/src/scripts/bert_onestopeng_lower.sh)
 - exp_14: traindataset을 class별로 10개만 샘플링해서 사용
@@ -23,7 +23,8 @@
 
 
 _________________________________________________________________________________________
-[1] BERT, BART, GPT, EDA 기반 모델만 필요
-[2] Masked LM 대상으로, tf-idf 적용
-[3] 즉, CBERT, CMODBERT, CMODBERTP만 
-[4] tf-idf 적용했을 때, 안했을 때(제가 했어요 안해도 ㄱㅊ) -> 두 결과 모두 필요
+1. BERT, BART, GPT, EDA 기반 모델만 필요
+2. Masked LM 대상으로, tf-idf 적용
+3. 즉, CBERT, CMODBERT, CMODBERTP만 
+4. tf-idf 적용했을 때, 안했을 때(제가 했어요 안해도 ㄱㅊ) -> 두 결과 모두 필요
+-> [3] Data Augmentation 부분 관련해서만 봐주시면 됩니다.
